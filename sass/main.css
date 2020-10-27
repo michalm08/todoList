@@ -1,0 +1,194 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 120px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(153deg, #380036 14%, #0cbaba 100%);
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.none {
+  display: none;
+}
+
+.todo {
+  width: 400px;
+  text-align: center;
+}
+
+.todo .header {
+  position: relative;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+.todo .header h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-shadow: 0px 0px 3px black;
+}
+
+.todo .header .todoInput {
+  width: 100%;
+  padding: 10px 105px 10px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 20px;
+  -webkit-box-shadow: 2px 2px 6px black;
+          box-shadow: 2px 2px 6px black;
+}
+
+.todo .header button {
+  position: absolute;
+  right: 0px;
+  padding: 5px 25px;
+  right: 0;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #425bff;
+  margin: 6px;
+  font-size: 16px;
+}
+
+.todo .todoList {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 6px black;
+          box-shadow: 2px 2px 6px black;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.todo .todoList h3 {
+  color: #ff9292;
+}
+
+.todo .todoList ul {
+  list-style: none;
+}
+
+.todo .todoList li {
+  margin: 3px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todo .todoList li p {
+  width: 80%;
+  display: inline;
+  background-color: red;
+}
+
+.todo .todoList li .tools {
+  display: inline-block;
+  text-align: right;
+  right: 0px;
+  margin: 0 10px;
+}
+
+.todo .todoList li .tools button {
+  border: none;
+  font-size: 17px;
+  padding: 10px 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.todo .todoList li .tools button:hover {
+  background-color: #dadada;
+}
+
+.todo .todoList li .tools .accept {
+  color: blue;
+}
+
+.todo .todoList li .tools .edit {
+  color: royalblue;
+  text-transform: uppercase;
+}
+
+.todo .todoList li .tools .cancel {
+  color: tomato;
+}
+
+.todo .todoList .done {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.popup {
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  bottom: 50px;
+  background-color: #dadada;
+  border-radius: 5px;
+}
+
+.popup h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 0px 0px 2px black;
+}
+
+.popup .popupInput {
+  width: 80%;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.popup .buttons button {
+  margin: 5px 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .todo {
+    width: 80%;
+  }
+  .todo .todoList li .tools button:hover {
+    background-color: #ffffff00;
+  }
+}
+/*# sourceMappingURL=main.css.map */

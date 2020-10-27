@@ -1,0 +1,219 @@
+* 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+html
+    
+body
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    // background-color: #69f2b666
+    // background: #008681
+    // background: linear-gradient(90deg, rgba(66,91,255,1) 0%, rgba(255,255,255,1) 50%, rgba(66,91,255,1) 100%)
+    background: linear-gradient(153deg, rgba(56,0,54,1) 14%, rgba(12,186,186,1) 100%);
+    background-attachment: fixed
+
+    width: 100vw
+    height: 100vh
+    
+    // color: white
+
+
+.none
+    display: none
+
+    
+.todo
+    width: 400px
+    text-align: center
+    .header
+        position: relative
+        padding: 30px 0
+        margin-bottom: 20px
+
+        h1
+            margin-bottom: 20px
+            color: #fff
+            text-transform: uppercase
+            font-weight: normal
+            text-shadow: 0px 0px 3px black
+
+        
+
+        .todoInput
+            
+            width: 100%
+            padding: 10px 105px 10px 10px;
+                      
+            border: none
+            border-radius: 5px
+            font-size: 18px
+            line-height: 20px;
+            box-shadow: 2px 2px 6px black
+
+        button
+            
+            position: absolute
+            right: 0px
+            padding: 5px 25px;
+            right: 0
+            border: none
+            border-radius: 5px
+            
+            color: #fff
+            background-color: rgb(66, 91, 255)
+            margin: 6px
+            font-size: 16px
+
+        
+
+    .todoList
+        // background-color: #a8a8a8
+        background-color: #fff
+        border-radius: 5px
+        box-shadow: 2px 2px 6px black
+
+        
+        padding: 10px
+        margin-bottom: 100px
+        // padding-top: 20px
+
+        h3
+            color: #ff9292
+            
+        ul
+            list-style: none
+        li
+            
+            margin: 3px 10px
+            background-color: #fff
+            border-radius: 10px
+            display: flex;
+            justify-content: space-between;
+            p
+                width: 80%
+                display: inline
+                background-color: red
+                
+
+            .tools
+                // position: absolute
+                display: inline-block
+                text-align: right
+                right: 0px
+                margin: 0 10px
+                button
+                    
+                    border: none
+                    font-size: 17px
+                    // height: 100%
+                    // margin: 0 5px
+                    padding:  10px 4px
+                    background-color: #fff
+                    cursor: pointer
+                button:hover
+                    background-color: #dadada
+
+                
+                .accept
+                    color: blue
+                // .acceptComplete
+                //     color: grey
+                
+
+                .edit
+                    color: royalblue
+                    
+                    text-transform: uppercase
+
+                .cancel
+                    color: tomato
+        
+        
+
+        .done
+            color: grey
+            text-decoration: line-through
+            
+
+
+.popup
+
+    text-align: center
+    
+    // justify-content: center;
+    position: absolute
+    width: 400px
+    bottom: 50px
+    // height: 150px
+    background-color: #dadada
+    border-radius: 5px
+
+    h3
+        margin-top: 20px
+        margin-bottom: 10px
+        
+        color: #fff
+        text-shadow:  0px 0px 2px black
+
+    .popupInput
+        width: 80%
+        margin: 10px 10px
+        padding: 10px 10px
+        border: none
+        border-radius: 5px
+
+    .buttons
+        display: flex;
+        justify-content: center;
+        border: none
+        margin-bottom: 15px
+        
+
+        button
+            margin: 5px 40px
+            padding: 10px 20px
+            border-radius: 5px
+            border: none
+            background-color: #fff
+            cursor: pointer
+            
+
+    // display: none;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    // position: fixed;
+    // bottom: 20px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // width: 800px;
+    // color: var(--light);
+    // background-color: var(--light-dark);
+    // border-radius: 5px;
+
+
+
+
+
+
+        
+
+
+@media screen and ( max-width:400px  )
+    .todo
+        width: 80%
+        .todoList
+            li
+                .tools
+                    button:hover
+                        background-color: #ffffff00
+
+
+
+
+
+
